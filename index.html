@@ -7,8 +7,20 @@
   <title>Stranger Things</title>
   <style type="text/css" title="strangerthings">
 
-* {
+*{
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+.espace {
+  width:100%;
+  padding: 10px;
 }
 
   .card {
@@ -124,14 +136,38 @@
      
     }
 
+    @media (min-width: 600px) {
+    body {
+  flex-direction:row;
+  flex-wrap:wrap;
+  } 
+  
+  .espace {
+  width: 50%;
+  } 
+
+}
+
+    @media (min-width: 900px) {
+    body {
+  flex-direction:row;
+  } 
+  
+  .espace {
+  width: 25%;
+  } 
+
+}
+
+
 
 </style>
 
 </head>
 
-<body  style="background-color:#000000;">
+<body style="background-color:#000000;">
   
-  
+<div class='espace'>
   <div class="card" >
     
     <div class="img2">
@@ -147,6 +183,7 @@
   </div>
 </div>
 
+<div class='espace'>
 <div class="card" >
     
   <div class="img2">
@@ -161,9 +198,11 @@
   </div>
 </div>
 </div>
+</div>
+</div>
  
 
-
+<div class='espace'>
 <div class="card" >
     
   <div class="img2">
@@ -178,12 +217,13 @@
   </div>
 </div>
 </div>
+</div>
 
  
 
 
 
-
+<div class='espace'>
 <div class="card" >
     
   <div class="img2">
@@ -196,6 +236,7 @@
     <p class="title"><b>Mike</b></p>
       <p class="texte" style="font-family:sans-serif; font-size:16px;" >Onze, de son vrai nom: Jane Ives, est la super-héroïne de Stranger Things. Elle est la seule à posséder des super pouvoirs. D'un simple saignement de nez, elle peut réaliser des choses impressionnantes avec son esprit et sauver ses camarades.</p>
   </div>
+</div>
 </div>
 </div>
 
